@@ -29,3 +29,4 @@ def aboutus():
 @auth.route('/petsday')
 def petsday():
     return render_template("petsday.html")
+
