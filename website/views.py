@@ -16,7 +16,7 @@ def health_tips():
 
 @views.route('/chat')
 def chat():
-    return render_template("./public/chat.html")
+    return render_template("chat.html")
 
 @views.route('/contact')
 def contact():
@@ -25,3 +25,7 @@ def contact():
 @views.route('/aboutus')
 def aboutus():
     return render_template("aboutus.html")
+
+@views.route('/petsday')
+def petsday():
+    return render_template("petsday.html")

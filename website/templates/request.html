@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}PetVetCare | Chat{% endblock %}
-{% block activelinkchat %}nav-link active{% endblock %}
+{% block title %}PetVetCare | Home{% endblock %}
+{% block activelinkhome %}nav-link active{% endblock %}
 {% block content %}
 
 
@@ -38,7 +38,17 @@
 <body>
     
     <div class="main-container">
-       
+        <div class="panel panel-default panel-full-screen-background space-large">
+            <div class="panel-body ng-scope" ng-controller="appointmentRequestController">
+              <div class="text-center">
+                <h2>Request an Appointment</h2>
+              </div>
+                <div>
+                  <p>Please note: this is a request. The exact date/time you request may not be available. Watch for a text or email to confirm your appointment time and date.</p>
+                </div>
+              
+            </div>
+          </div>
     </div>
    
 

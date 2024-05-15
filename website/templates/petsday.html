@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}PetVetCare | home{% endblock %}
+{% block activelinkhome %}nav-link active{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetVetCare | FAQs</title>
+
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+<style>
+
+</style>
+
+
+<!-- Custom styles for this template -->
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    
+<div class="container-petday" style="padding: 20px;">
+ 
+    <p class="lead">People love pets. They’re some of the most excellent companions’ people can have and make a living each day 
+        just a little bit better. However, for the animals who don’t have homes, many people don’t realize the 
+        benefits of adopting a pet. Even those animals who are old can become some of the greatest gifts in life.
+        
+        National Pet Day celebrates the joy that pets bring into peoples lives and encourages people to help reduce
+         the number of animals in shelters. Bringing humans and animals together helps make the world a better place.</p>
+        
+         <h2 class="featurette-heading fw-normal lh-1">Learn about National Pet Day</h2>
+        
+         <p class="lead">National Pet Day may as well take place every day for most pet owners. After all, we all recognize the love
+         and joy that animals bring to our lives, and we make sure to let our pets know how much they mean to use. 
+         From cats and bunnies to chickens and dogs; no matter what pets you have in your home, National Pet Day gives
+          you the perfect opportunity to hug your pet more and let him or her know how much they brighten up your life.
+           For most people, a pet is the best friend they will ever have! At the end of the day, you’re never going to 
+           find someone more loyal than a pet, right?
+        
+        Have you ever wondered what the world’s most popular pets are? We are sure that it does not come as a surprise 
+        that dogs are the most popular, followed by cats! But, what comes next? Well, you have fish, and then birds.
+         After this, hamsters, gerbils, mouses, horses, and snakes complete the list of the most popular pets.</p>
+<h2 class="featurette-heading fw-normal lh-1">History of National Pet Day</h2>
+<p class="lead">National Pet Day began in 2006 when Animal Welfare Advocate Colleen Page decided she wanted to celebrate the 
+    joy that pets bring into people’s lives. As a Pet & Family Lifestyle Expert, she wanted to celebrate all pets.
+    
+    Advocating for the adoption of pets from animal shelters, she brainstormed the holiday to create public 
+    awareness for the animals awaiting homes in shelters. According to the ASPCA, approximately 6.5 million 
+    animals enter animal shelters every year.
+    
+    The number of animals entering shelters has been significantly decreasing over the years. But there’s
+     still a significant number of animals entering and being euthanized due to shelter capacity and lack of
+      awareness.
+    
+    Page hopes that these numbers can continue to decrease with the celebration of National Pet Day. 
+    Encouraging adoption as a first choice is one of the main ideas behind National Pet Day.
+    
+    This is especially true in regards to those who are thinking about purchasing a pet from a breeder. 
+    On this day, people are encouraged to love their pets, spoil them, adopt pets, and volunteer at the local 
+    animal shelter.
+    
+    National Pet Day celebrates the unconditional love that animals give to people in their daily lives.
+     It also encourages people to take the time to spend time with their beloved animals.</p>
+</div>
+
+<script src="{{ url_for('static', filename='js/index.js') }}" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+
+</body>
+</html>
+
+{% endblock %}
+    

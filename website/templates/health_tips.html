@@ -29,7 +29,6 @@
 
 
 <style>
-
 </style>
 
 
@@ -37,42 +36,134 @@
 <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-  
     
 <div class="container">
-    <h1>Pet Health Tips</h1>
+    <div class="container px-4 py-5" id="hanging-icons">
+       
+        <div class="row g-4 py-1 row-cols-1 row-cols-lg-3">
+
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Regular Dental Care</h3>
+              <p>Just like humans, pets need regular dental care to prevent gum disease, tooth decay, and bad breath. Brush your pet's teeth regularly and provide dental chews or toys to help keep their teeth clean.</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Monitor Weight</h3>
+              <p>Obesity is a common issue in pets and can lead to various health problems such as diabetes, joint pain, and heart disease. 
+                Monitor your pet's weight and adjust their diet and exercise routine accordingly to keep them at a healthy weight.</p>
+              </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Prevent Parasites</h3>
+              <p>Regularly check your pet for fleas, ticks, and other parasites. Use preventive medications as recommended by your veterinarian to protect your
+                 pet from these pests, which can transmit diseases and cause discomfort.</p>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Provide Mental Stimulation</h3>
+                <p>Mental stimulation is just as important as physical exercise for your pet's overall well-being. Provide interactive toys, puzzles, and regular playtime to keep your pet's mind sharp and prevent boredom.</p>
+              </div>
+            </div>
+  
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Limit Table Scraps</h3>
+                <p>While it can be tempting to share your food with your pet, many human foods are not safe for animals and can cause digestive issues or even toxicity. Stick to a balanced diet formulated for your pet's specific nutritional needs.</p>
+                </div>
+            </div>
+  
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Regular Vet Check-ups</h3>
+                <p>Annual check-ups are essential for detecting and preventing health problems before they become serious. Your veterinarian can also provide guidance on nutrition, behavior, and preventive care tailored to your pet's individual needs.</p>
+                </div>
+            </div>
+            
+          </div>
+
+          <div class="row g-4 py-1 row-cols-1 row-cols-lg-3">
+
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Keep Them Hydrated</h3>
+                <p>Ensure your pet has access to clean, fresh water at all times. Dehydration can lead to serious health issues, especially in warmer weather or for pets with certain medical conditions.</p>
+              </div>
+            </div>
+  
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Provide a Safe Environment</h3>
+                <p>Pets can get into all sorts of trouble if their environment isn't pet-proofed. Remove hazards such as toxic plants, small objects that can be swallowed, and secure cabinets containing household chemicals or medications.</p>
+                </div>
+            </div>
+  
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Maintain Good Hygiene</h3>
+                <p>Regular grooming, including brushing your pet's coat and trimming their nails, is important for their physical health and comfort. It also helps you spot any abnormalities like lumps, bumps, or skin issues early on.</p>
+                </div>
+            </div>
+            
+          </div>
+      </div>
     
-    <h2>General Tips</h2>
-    <ul>
-        <li>Provide fresh water at all times.</li>
-        <li>Feed your pet a balanced diet recommended by your veterinarian.</li>
-        <li>Ensure your pet gets regular exercise appropriate for their breed and age.</li>
-        <li>Keep your pet at a healthy weight to prevent obesity-related health issues.</li>
-    </ul>
-
-    <h2>Dental Health</h2>
-    <p>Proper dental care is essential for your pet's overall health:</p>
-    <ul>
-        <li>Brush your pet's teeth regularly with pet-friendly toothpaste.</li>
-        <li>Provide dental chews or toys to help clean teeth and gums.</li>
-        <li>Schedule regular dental check-ups with your veterinarian.</li>
-    </ul>
-
-    <h2>Mental Health</h2>
-    <p>Keep your pet mentally stimulated and emotionally happy:</p>
-    <ul>
-        <li>Provide toys and puzzles for mental stimulation.</li>
-        <li>Give your pet plenty of attention and affection.</li>
-        <li>Consider enrolling your pet in training classes or activities.</li>
-    </ul>
-
-    <h2>Regular Vet Check-ups</h2>
-    <p>Regular visits to the veterinarian are crucial for maintaining your pet's health:</p>
-    <ul>
-        <li>Schedule annual wellness exams.</li>
-        <li>Keep vaccinations up to date.</li>
-        <li>Discuss any concerns or changes in behavior with your vet.</li>
-    </ul>
+    
 </div>
 
 <script src="index.js" type="text/javascript"></script>

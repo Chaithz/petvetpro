@@ -1,4 +1,8 @@
-
+ /* image index */
+ .img-index{
+    height: 30rem;
+    width: 100%;
+ }
    /* Basic styling for the form */
    
     
@@ -78,3 +82,5 @@ button[type="submit"]:hover,
 .container-abt{
 	padding: 50px;
   }
+
+  

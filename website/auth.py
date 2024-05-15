@@ -25,3 +25,7 @@ def contact():
 @auth.route('/aboutus')
 def aboutus():
     return render_template("aboutus.html")
+
+@auth.route('/petsday')
+def petsday():
+    return render_template("petsday.html")
