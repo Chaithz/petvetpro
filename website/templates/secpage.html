@@ -39,7 +39,7 @@
 
     <div class="container">
         <div class="form-box">
-            <form id="symptomsForm">
+            <form id="symptomsForm" method="POST" action="/secpage">
               
               <label for="pet" style="font-weight: bold;margin-bottom: 5px;">Choose:</label>
               <select class="form-select" aria-label="pet select" style="margin-bottom: 10px; border-color: black;border-width: 1.5px;">
@@ -95,7 +95,7 @@
                 <input type="text" id="affection" name="affection" placeholder="Enter the value between 1-10" required>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                  <button class="btn btn-primary me-md-2" type="button" onclick="">Submit</button>
+                  <button class="btn btn-primary me-md-2" type="submit">Submit</button>
                   <button class="btn btn-secondary" type="button" onclick="window.history.back()">Previous</button>
                 </div>
               

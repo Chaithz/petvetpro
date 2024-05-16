@@ -4,7 +4,14 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
 
-    petml.load_csv()
+    # petml.load_csv()
+    # petml.fill_missing_values(data)
+    # petml.variables()
+    # petml.model_train(X,y)
+    # petml.inputs()
+    # petml.prediction(affection,vaccinated,age,weight,appetite,injury,wound)
+    
+
     from .views import views
     from .auth import auth
 

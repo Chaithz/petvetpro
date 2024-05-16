@@ -6,9 +6,9 @@ auth = Blueprint('auth', __name__)
 def index():
     return render_template("index.html")
 
-@auth.route('/secpage')
-def secpage():
-    return render_template("secpage.html")
+# @auth.route('/secpage')
+# def secpage():
+#     return render_template("secpage.html")
 
 @auth.route('/health_tips')
 def health_tips():
