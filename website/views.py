@@ -1,4 +1,5 @@
 from flask import Blueprint,render_template
+from petml import load_csv
 
 views = Blueprint('views', __name__)
 
@@ -8,7 +9,10 @@ def home():
 
 @views.route('/secpage')
 def secpage():
-    return render_template("secpage.html")
+    data=load_csv()
+
+    
+    return render_template("secpage.html",data)
 
 @views.route('/health_tips')
 def health_tips():
