@@ -28,29 +28,7 @@
 
 
 <style>
-/*----contact form-----*/
-.container-contact{
-	font-size: 15px;
-	margin: 20px auto;
-	padding: 20px;
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.container-contact p{
-	color: #666;
-	line-height: 1.6;
-}
-.container-contact ul{
-	list-style-type: disc;
-	margin-left: 20px;
-}
-.container-contact h1{
-	font-size: 25px;
-}
-.container-contact h2{
-	font-size: 25px;
-}
+
 </style>
 
 
@@ -62,30 +40,54 @@
 
   <div class="container-contact">
  
+    <div class="card mb-3" style="width: 1200px; height: 200px;">
+      <div class="row g-0">
+        <div class="col-md-4" style="margin-right: -150px;">
+          <img src="{{ url_for('static', filename='images/doctorpro.jpg') }}" class="img-fluid rounded-start" alt="doctor profile" height="50%" width="50%">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Dr P Manohar Upadhya</h5>
+            <p class="card-text" style ="margin-top: 20px;"><b>Address:</b> 1-22/7/1, Maroli, near Sooryanarayana Temple, Mangaluru, Karnataka 575005</p>
+             <p class="card-text"> <b>Hours:</b> Mon-Sat Open 9am-2pm, 4pm-7pm</p>
+            <p class="card-text"><b>Phone: </b><a href="tel:093433 45603">093433-45603 </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Contact Section -->
-   
-    <section class="contact-section">
-     <h2>Contact Us</h2>
-     <div class="contact-form">
-       <div>
-         <input type="Name" placeholder="First Name">
-         <input type="Name" placeholder="Last Name">
-       </div>
-       <div>
-         <input type="email" placeholder="E-mail">
-         <input type="Phone" placeholder="Phone">
-       </div>
-       <div>
-         <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
-       </div>
-       <div class="buttons">
-         <div>
-           <button class="Message">Send Message</button>
-         </div>
-       </div>
-     </div>
-   </section>
+    <div class="card mb-3" style="width: 1200px; height: 200px;">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body" style="text-align: right;margin-right: -130px;">
+            <h5 class="card-title">Dr. Yashaswi Naravi</h5>
+            <p class="card-text" style="margin-top: 20px;"><b>Address:</b> Charles Pinto Compound, Behind Karnataka Bank, Kulashekara, Mangaluru, Karnataka 575005</p>
+            <p class="card-text"><b>Hours:</b> Mon-Sat Open 9:30am-8pm</p>
+            <p class="card-text"><b>Phone: </b><a href="tel:09844548311"> 09844548311</a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="{{ url_for('static', filename='images/doctorpro.jpg') }}" class="img-fluid rounded-start" alt="doctor profile" height="50%" width="50%" style="margin-left: 200px;">
+        </div>
+      </div>
+    </div>
+    
+    <div class="card mb-3" style="width: 1200px; height: 200px;">
+      <div class="row g-0">
+        <div class="col-md-4" style="margin-right: -150px;">
+          <img src="{{ url_for('static', filename='images/doctorpro.jpg') }}" class="img-fluid rounded-start" alt="doctor profile" height="50%" width="50%">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Dr B Niranjan Hegde</h5>
+            <p class="card-text" style ="margin-top: 20px;"><b>Address:</b> Ladyhill, Mangaluru, Kuloor Ferry Road, Lady Hill, Mangalore - 575003</p>
+             <p class="card-text"> <b>Hours:</b> Mon-Sat Open 9:30am-5pm</p>
+            <p class="card-text"><b>Phone: </b><a href="tel:07947426008">07947426008</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
  
  </div>
 
