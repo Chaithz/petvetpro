@@ -14,9 +14,9 @@ def index():
 def health_tips():
     return render_template("health_tips.html")
 
-@auth.route('/chat')
-def chat():
-    return render_template("chat.html")
+@auth.route('/reviews')
+def reviews():
+    return render_template("reviews.html")
 
 @auth.route('/contact')
 def contact():
@@ -30,3 +30,10 @@ def aboutus():
 def petsday():
     return render_template("petsday.html")
 
+@auth.route('/signup')
+def signup():
+    return render_template("register.html")
+
+@auth.route('/signin')
+def signin():
+    return render_template("login.html")

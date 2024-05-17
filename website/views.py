@@ -52,9 +52,9 @@ def results():
 def health_tips():
     return render_template("health_tips.html")
 
-@views.route('/chat')
-def chat():
-    return render_template("chat.html")
+@views.route('/reviews')
+def reviews():
+    return render_template("reviews.html")
 
 @views.route('/contact')
 def contact():
@@ -67,3 +67,11 @@ def aboutus():
 @views.route('/petsday')
 def petsday():
     return render_template("petsday.html")
+
+@views.route('/signup')
+def signup():
+    return render_template("register.html")
+
+@views.route('/signin')
+def signin():
+    return render_template("login.html")
