@@ -56,11 +56,17 @@
           </a>
     
           <ul class="nav nav-pills" >
+            {% if user.is_authenticated %}
+            <li class="nav-item"><a href="/logout" class="{% block activelinkhome %}nav-link{% endblock %}" aria-current="page">Logout</a></li>
+            {% else %}
             <li class="nav-item"><a href="/index" class="{% block activelinkhome %}nav-link{% endblock %}" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="/health_tips" class="{% block activelinkhealth %}nav-link{% endblock %}">Health Tips</a></li>
             <li class="nav-item"><a href="/reviews" class="{% block activelinkchat %}nav-link{% endblock %}">Reviews</a></li>
             <li class="nav-item"><a href="/contact" class="{% block activelinkcontact %}nav-link{% endblock %}">Contact</a></li>
             <li class="nav-item"><a href="/aboutus" class="{% block activelinkabout %}nav-link{% endblock %}">About us</a></li>
+            <li class="nav-item"><a href="/register" class="{% block activelinkabout %}nav-link{% endblock %}">Login</a></li>
+            <li class="nav-item"><a href="/sign_up" class="{% block activelinkabout %}nav-link{% endblock %}">SignUp</a></li>
+            {% endif %}
             {% block login %}  {% endblock %}
           </ul>
         </header>
