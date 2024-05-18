@@ -37,3 +37,7 @@ def signup():
 @auth.route('/signin')
 def signin():
     return render_template("login.html")
+
+@auth.route('/appointment')
+def appointment():
+    return render_template("appointment.html")
