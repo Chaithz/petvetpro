@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% block title %}PetVetCare{% endblock %}</title>
+<title>PetVetCare | Login </title>
 
 <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
@@ -55,19 +55,32 @@
             <span class="fs-1"><img src="{{ url_for('static', filename='images/images.png') }}" alt="logo" height="80" width="120"/>PetVetPro</span>
           </a>
     
-          <ul class="nav nav-pills" >
-            <li class="nav-item"><a href="/index" class="{% block activelinkhome %}nav-link{% endblock %}" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="/health_tips" class="{% block activelinkhealth %}nav-link{% endblock %}">Health Tips</a></li>
-            <li class="nav-item"><a href="/reviews" class="{% block activelinkchat %}nav-link{% endblock %}">Reviews</a></li>
-            <li class="nav-item"><a href="/contact" class="{% block activelinkcontact %}nav-link{% endblock %}">Contact</a></li>
-            <li class="nav-item"><a href="/aboutus" class="{% block activelinkabout %}nav-link{% endblock %}">About us</a></li>
-            {% block login %}  {% endblock %}
-          </ul>
         </header>
     </div>
-    {% block content %}
-    <!-- Content of individual pages will go here -->
-    {% endblock %}
+     
+
+    <div class="container my-5">
+		<h4 class="text-center">Login</h4>
+		<form class="col-md-4 offset-md-4" action="@{/save}" method="post">
+			
+			<div class="mb-3">
+				<label for="email" class="form-label">Email
+					</label> <input type="text" class="form-control" name="email">	
+			</div>
+
+			<div class="mb-3">
+				<label for="password" class="form-label">password
+				</label> <input type="text" class="form-control" name="password">
+			</div>
+			
+			<center><button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Login</button></center>
+            <div class="form-group">
+                <span>New user? <a href="/signup" href="@{/registration}">Register
+                        here</a></span></div>
+		</form>
+	</div>
+
+
     <!-- FOOTER -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
