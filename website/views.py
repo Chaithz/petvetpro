@@ -98,7 +98,7 @@ def reviews():
 @views.route('delete-review', method=['POST'])
 def delete_review():
     review = json.loads(request.data) # this function expects a JSON from the INDEX.js file 
-    review = review['reviewId']
+    reviewId = review['reviewId']
     review = Review.query.get(reviewId)
     if review:
         if review.user_id == current_user.id:
