@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}PetVetCare | Chat{% endblock %}
+{% block title %}PetVetCare | Reviews{% endblock %}
 {% block activelinkchat %}nav-link active{% endblock %}
 {% block content %}
 
@@ -37,8 +37,54 @@
 </head>
 <body>
     
-    <div class="main-container">
+    <div class="main-container" style="padding: 60px;">
+        
+<!--
+    <h1>Reviews</h1>
+    {% for review in reviews %}
+        <div class="review">
+            <h2>{{ review.name }}</h2>
+            <p><small>{{ review.date_time }}</small></p>
+            <p>{{ review.review }}</p>
+        </div>
+    {% endfor %}-->
+
        
+                <div class="card" style="width: 90%;height: 200px; margin: -20px 30px 50px 30px;">
+                    <div class="card-body">
+                    <h4 class="card-title" style="margin-left: 15px;"> <img class="rounded-circle" src="{{ url_for('static', filename='images/profile.png') }}" alt="profile" height="60" width="70"/><span style="margin-left: 20px;">Name</span></h4>
+                    <p class="card-text" style="margin-top: 20px; margin-left: 20px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 90%;height: 200px; margin: -20px 30px 50px 30px;">
+                    <div class="card-body">
+                    <h4 class="card-title" style="margin-left: 15px;"> <img class="rounded-circle" src="{{ url_for('static', filename='images/profile.png') }}" alt="profile" height="60" width="70"/><span style="margin-left: 20px;">Name</span></h4>
+                    <p class="card-text" style="margin-top: 20px; margin-left: 20px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 90%;height: 200px; margin: -20px 30px 50px 30px;">
+                    <div class="card-body">
+                    <h4 class="card-title" style="margin-left: 15px;"> <img class="rounded-circle" src="{{ url_for('static', filename='images/profile.png') }}" alt="profile" height="60" width="70"/><span style="margin-left: 20px;">Name</span></h4>
+                    <p class="card-text" style="margin-top: 20px; margin-left: 20px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 90%;height: 200px; margin: -20px 30px 50px 30px;">
+                    <div class="card-body">
+                    <h4 class="card-title" style="margin-left: 15px;"> <img class="rounded-circle" src="{{ url_for('static', filename='images/profile.png') }}" alt="profile" height="60" width="70"/><span style="margin-left: 20px;">Name</span></h4>
+                    <p class="card-text" style="margin-top: 20px; margin-left: 20px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 90%;height: 200px; margin: -20px 30px 50px 30px;">
+                    <div class="card-body">
+                    <h4 class="card-title" style="margin-left: 15px;"> <img class="rounded-circle" src="{{ url_for('static', filename='images/profile.png') }}" alt="profile" height="60" width="70"/><span style="margin-left: 20px;">Name</span></h4>
+                    <p class="card-text" style="margin-top: 20px; margin-left: 20px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                
     </div>
    
 
