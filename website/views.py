@@ -23,7 +23,6 @@ def secpage():
     appetite = None
     injury = None
     wound = None
-    
     if request.method == 'POST':
         data = load_csv()
         fill_missing_values(data)
@@ -57,9 +56,9 @@ def results():
 def health_tips():
     return render_template("health_tips.html")
 
-@views.route('/reviews')
-def reviews():
-    return render_template("reviews.html")
+# @views.route('/reviews')
+# def reviews():
+#     return render_template("reviews.html")
 
 @views.route('/contact')
 def contact():
@@ -72,6 +71,11 @@ def aboutus():
 @views.route('/petsday')
 def petsday():
     return render_template("petsday.html")
+
+@views.route('/reviews_page')
+def review_page():
+    return render_template("reviews_page.html")
+
 
 @views.route('/appointment')
 def appointment():
@@ -95,7 +99,7 @@ def reviews():
 
     return render_template("write.html", user=current_user)
 
-@views.route('delete-review', method=['POST'])
+@views.route('delete-review', methods=['POST'])
 def delete_review():
     review = json.loads(request.data) # this function expects a JSON from the INDEX.js file 
     reviewId = review['reviewId']

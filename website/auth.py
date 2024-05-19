@@ -17,7 +17,7 @@ def index():
 @auth.route('/register',methods = ['GET','POST'])
 def register():
     if request.method == 'POST':
-        firstname = request.form.get('name')
+        firstname = request.form.get('firstname')
         email = request.form.get('email')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
@@ -25,19 +25,19 @@ def register():
         user = User.query.filter_by(email=email).first()
         if user:
             flash('Email already exists!', category='error')
-        elif  len(email) <2:
+        elif  len(email)<2:
             flash('Email must be greater than 1 character!', category='error')
-        elif len(firstname) < 2:
+        elif len(firstname)<2:
             flash('Name must be greater than 1 character!', category = 'error')
-        elif len(password1) < 6:
+        elif len(password1)<6:
             flash('Password must be atleast 6 character!', category = 'error')
         elif password1 != password2:
             flash('Password Mismatch!', category = 'error')
         else:
-            new_user =User(email=email, firstname=firstname,password=generate_password_hash(password1, method='sha256'))
+            new_user =User(email=email, firstname=firstname,password=generate_password_hash(password1, method='pbkdf2:sha256'))
             db.session.add(new_user)
             db.session.commit()
-            login_user(user, remember=True)
+            #login_user(user, remember=True)
 
             flash('Account created successfully!', category = 'success')
             return redirect(url_for('views.home'))

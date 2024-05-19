@@ -1,4 +1,7 @@
-
+{% extends "base.html" %}
+{% block title %}PetVetCare | Register{% endblock %}
+{% block activelinkregister %}nav-link active{% endblock %}
+{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +51,7 @@
       </symbol>
     </svg>
     
-    <div class="container">
+    <!--<div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" >
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -56,30 +59,30 @@
           </a>
     
         </header>
-    </div>
+    </div>-->
      
 
     <div class="container my-5">
 		<h4 class="text-center">Register</h4>
-		<form class="col-md-4 offset-md-4" action="@{/save}" method="post">
+		<form class="col-md-4 offset-md-4" action="{{ url_for('auth.register') }}" method="post">
 			<div class="mb-3">
 				<label for="name" class="form-label">Name
-					</label> <input type="text" class="form-control" name="firstname">	
+					</label> <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Name">	
 			</div>
 			
 			<div class="mb-3">
 				<label for="email" class="form-label">Email
-					</label> <input type="text" class="form-control" name="email">	
+					</label> <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">	
 			</div>
 
 			<div class="mb-3">
 				<label for="password" class="form-label">password
-				</label> <input type="text" class="form-control" name="password1">
+				</label> <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter Password">
 			</div>
 
 			<div class="mb-3">
 				<label for="password" class="form-label">Re-enter password
-					</label> <input type="text" class="form-control" name="password2">	
+					</label> <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm password">	
 			</div>
 			
 			<center><button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Register</button></center>
@@ -118,7 +121,7 @@
 </body>
 </html>
 
-
+{% endblock %}
 
 
 

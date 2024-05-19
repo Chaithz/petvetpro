@@ -4,9 +4,9 @@ from sqlalchemy.sql import func
 
 class User(db.Model,UserMixin):
     id = db.Column(db.Integer, primary_key= True)
-    email = db.Column(db.string(150), unique=True)
-    password = db.Column(db.string(150))
-    firstname = db.Column(db.string(150))
+    email = db.Column(db.String(150), unique=True)
+    password = db.Column(db.String(150))
+    firstname = db.Column(db.String(150))
     reviews = db.relationship('Review')
 
 class Review(db.Model):
