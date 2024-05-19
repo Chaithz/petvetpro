@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block title %}PetVetCare | Home{% endblock %}
-{% block activelinkhome %}nav-link active{% endblock %}
 {% block content %}
 
 
@@ -9,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PetVetCare | chat</title>
+<title>PetVetCare | Write</title>
 
 <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
@@ -41,27 +40,28 @@
         <div class="panel panel-default panel-full-screen-background space-large">
             <div class="panel-body ng-scope" ng-controller="appointmentRequestController">
               <div class="text-center">
-                <h1 align="center">Review</h1>
-                <ul class="'list-group list-group-flush" id="reviews">
-                  {% for review in user.reviews %}
-                  <li class="list-group-item">
-                    <strong>Pet:</strong> {{ review.pet }}<br>
-                    <strong>Review:</strong> {{ review.data }}
-                    <button type="button" class="close" onclick="deleteReview({{review.id}})">
-                    <span aria-hidden="true"></span>
-                    </button>
-                  </li>
-                  {% endfor %}
-                </ul>
+                <h1 allign="center">Review</h1>
+                  <ul class="list-group list-group-flush" id="reviews">
+                      {% for review in user.reviews %}
+                      <li class="list-group-item">
+                          <strong>Pet:</strong> {{ review.pet }}<br>
+                          <strong>Review:</strong> {{ review.data }}
+                          <button type="button" class="close" onClick="deleteNote({{ review.id }})">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </li>
+                      {% endfor %}
+                  </ul>
               <form method="POST">
                 <div class="mb-3">
                   <label for="animal" class="form-label">Animal
                     </label> <input type="text" class="form-control" name="animal">	
                 </div>
                 <br />
+                <label for="review" class="form-label">Write your Review</label>
                 <textarea name="review" id="review" class="form-control"></textarea>
                 <br />
-                <div align="center">
+                <div allign="center">
                   <button type="submit" class="btn btn-primary">Add Review</button>
                 </div>
               </form>
@@ -69,7 +69,12 @@
             </div>
           </div>
     </div>
-   
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
 <script src="{{ url_for('static', filename='js/index.js') }}"></script> 	

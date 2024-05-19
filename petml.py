@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 
 # Step 1: Load the CSV data
 def load_csv():
-    data = pd.read_csv('fake_animals.csv')
+    data = pd.read_csv('datasetanimals.csv')
     return data
 data = load_csv()
 

@@ -50,7 +50,10 @@ def results():
     # Get the prediction from the session
     prediction = session.get('prediction', None)
     
-    return render_template('results.html', prediction=prediction)
+    pet_name = "dog"
+    rev = Review.query.filter_by(pet=pet_name).order_by(Review.id.asc()).limit(3).all()
+
+    return render_template('results.html', prediction=prediction, rev=rev)
 
 @views.route('/health_tips')
 def health_tips():
@@ -74,8 +77,8 @@ def petsday():
 
 @views.route('/reviews_page')
 def review_page():
-    return render_template("reviews_page.html")
-
+    rev = Review.query.all()
+    return render_template("reviews_page.html",rev=rev)
 
 @views.route('/appointment')
 def appointment():
@@ -97,7 +100,7 @@ def write():
             flash('Review added successfully!', category='success')
 
 
-    return render_template("write.html", user=current_user)
+    return render_template("write.html",user=current_user)
 
 @views.route('delete-review', methods=['POST'])
 def delete_review():
