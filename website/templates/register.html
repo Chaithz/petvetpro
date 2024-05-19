@@ -86,7 +86,7 @@
 			</div>
 			
 			<center><button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Register</button></center>
-            <span>Already registered? <a href="/signin" th:href="@{/login}">Login
+            <span>Already registered? <a href="/login" th:href="{{ url_for('auth.login') }}">Login
                 here</a></span>
 		</form>
 	</div>

@@ -83,7 +83,7 @@ def appointment():
 
 @views.route('/write', methods=['GET','POST'])
 @login_required
-def reviews():
+def write():
     if request.method == 'POST':
         review = request.form.get('review')
         pet = request.form.get('animal')
